@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AwesomeApp.Page1">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button Text="Klikkaa minua" Clicked="Handle_Clicked" x:Name="helloButton" />
+        <Button Text="Add" Clicked="Add_Clicked" x:Name="addButton" />
+        <Button Text="List" Clicked="List_Clicked" x:Name="listButton" />
+        <ListView x:Name="Lista">
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

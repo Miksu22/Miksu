@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AwesomeApp.Loginpage">
+
+    <StackLayout>
+        
+        <Frame BackgroundColor="#2196F3" Padding="38" CornerRadius="0">
+            <Label Text="Welcome to Tivi-19o chat" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            
+        </Frame>
+        <Entry Placeholder="Käyttäjänimi" x:Name="nick" />
+        <Entry Placeholder="Password" x:Name="password" />
+        <Label Text="" x:Name="infoLabel"/>
+        <Grid>
+
+            <Button Text="Kirjaudu" Clicked="Handle_Login"
+             HorizontalOptions="Center"
+             VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" />
+
+            <Button Text="Register" Clicked="Handle_Register"
+             HorizontalOptions="Center"
+             VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="1" />
+
+        </Grid>
+        
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
+
